@@ -18,6 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemLongClickListener;
 
@@ -43,8 +44,8 @@ public class ToDoActivity extends Activity {
 		
 		mItems = new ArrayList<String>();
 		populateTodoItems();
-		mItemsAdptr = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, mItems);
-	    lv.setAdapter(mItemsAdptr);
+		mItemsAdptr = new ArrayAdapter<String>(getApplicationContext(), R.layout.simple_item_1, mItems);
+		lv.setAdapter(mItemsAdptr);
 	    
 	    
 		btn_newItem.setOnClickListener(new OnClickListener() {	
