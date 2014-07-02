@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/amnt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="numberDecimal"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/amnt_txt"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="28dp"
+        android:onClick="btn_click"
+        android:text="@string/_15_" />
+
+    <Button
+        android:id="@+id/btn_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_15"
+        android:layout_centerHorizontal="true"
+        android:onClick="btn_click"
+        android:text="@string/_20_" />
+
+    <Button
+        android:id="@+id/btn_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btn_20"
+        android:layout_alignBottom="@id/btn_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:onClick="btn_click"
+        android:text="@string/_25_" />
+
+</RelativeLayout>
