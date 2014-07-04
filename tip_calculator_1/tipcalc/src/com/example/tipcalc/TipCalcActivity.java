@@ -37,7 +37,7 @@ public class TipCalcActivity extends Activity {
 
 	private int get_amount() {
 		// TODO Auto-generated method stub
-		int amnt = 10;
+		int amnt = 0;
 		String amnt_str = amnt_txt.getText().toString();
 		try {
 				amnt = Integer.parseInt(amnt_str);

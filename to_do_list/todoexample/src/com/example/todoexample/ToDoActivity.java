@@ -79,8 +79,12 @@ public class ToDoActivity extends Activity {
 	
 	private void removeItems(int pos) {
 		// TODO Auto-generated method stub
-		String temp = mItemsAdptr.getItem(pos);
-		mItemsAdptr.remove(temp);
+		String temp = mItemsAdptr.getItem(pos);	
+		mItems.remove(pos);
+		mItemsAdptr.notifyDataSetChanged();
+		
+		// Doesn't work if two items of same name present. Gets first one instead of clicked one.
+		//mItemsAdptr.remove(temp);
 		Toast.makeText(getApplicationContext(), "Removed " + temp, Toast.LENGTH_SHORT).show();
 	}
 
